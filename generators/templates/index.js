@@ -78,7 +78,7 @@ module.exports = class extends Generator {
     this.fs.copy(
       this.templatePath('src/templates/meta/_icons.html'),
       this.destinationPath('src/templates/meta/_icons.html'));
-  
+
     this.fs.copy(
       this.templatePath('src/templates/partials/_breakpoints.html'),
       this.destinationPath('src/templates/partials/_breakpoints.html'));
@@ -96,8 +96,8 @@ module.exports = class extends Generator {
     // Images directories
     mkdirp('./src/images');
     this.fs.copy(
-      this.templatePath('dist/images/share.jpg'),
-      this.destinationPath('dist/images/share.jpg'));
+      this.templatePath('dist/images/nbn-white.png'),
+      this.destinationPath('dist/images/nbn-white.png'));
     // Javascript
     this.fs.copy(
       this.templatePath('src/js/main-app.js'),

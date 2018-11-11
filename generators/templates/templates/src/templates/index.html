@@ -19,13 +19,18 @@
         {% if env == 'production' %}
         <link href="css/main-app.css" rel="stylesheet">
         {% endif %}
-        <link rel="stylesheet" type="text/css" href="https://www.politico.com/interactives/cdn/fonts/battletoads/icons/politico-battletoads-icons.min.css">
+
+        <!-- Font Awesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <!-- jQuery -->
         <script
           src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
           integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
           crossorigin="anonymous">
         </script>
+
+        <!-- Piano ad blocker detection -->
+        {% include "ads/_piano.html" %}
 
         <!--Typekit-->
         <!-- DIN 2014 only -->
@@ -43,7 +48,6 @@
         <p>Hello! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
 
         <p class="content-fit mb0 small">
-        <a  class="sans" target="blank" href="https://the-politico.github.io/politico-style/style-guide/">Full Style guide <b class="bt-icon bt-icon--add"></b></a></span>
         </p>
 
         <!-- Breakpoint reminder which you can delete -->
@@ -58,7 +62,5 @@
 
 {% block js %}
 <script type="text/javascript" src="js/main-app.bundle.js"></script>
-<% if (ai2html) {%>{%include "partials/_ai2html-resizer.html"%}<%} %>
-{% endblock %}
 
-{% include "meta/_telium.html" %}
+{% endblock %}
