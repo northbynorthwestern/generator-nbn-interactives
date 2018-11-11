@@ -1,6 +1,6 @@
-{
+nbn{
   "name": "generator-politico-interactives",
-  "description": "Yeoman generator for interactive projects at POLITICO.",
+  "description": "Yeoman generator for interactive projects at North by Northwestern. Thank you POLITICO!",
   "version": "0.10.0",
   "main": "generators/app/index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/The-Politico/generator-politico-interactives.git"
+    "url": "https://github.com/northbynortwestern/generator-nbn-interactives.git"
   },
   "dependencies": {
     "@octokit/rest": "^15.11.2",
