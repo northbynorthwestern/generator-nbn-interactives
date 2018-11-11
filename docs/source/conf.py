@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# generator-politico-interactives documentation build configuration file, created by
+# generator-nbn-interactives documentation build configuration file, created by
 # sphinx-quickstart on Mon Jul 17 21:08:58 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -51,7 +51,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'generator-politico-interactives'
+project = 'generator-nbn-interactives'
 copyright = '2017, Jon McClure'
 author = 'Jon McClure'
 
@@ -120,7 +120,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'generator-politico-interactivesdoc'
+htmlhelp_basename = 'generator-nbn-interactivesdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -147,7 +147,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'generator-politico-interactives.tex', 'generator-politico-interactives Documentation',
+    (master_doc, 'generator-nbn-interactives.tex', 'generator-nbn-interactives Documentation',
      'Jon McClure', 'manual'),
 ]
 
@@ -157,7 +157,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'generator-politico-interactives', 'generator-politico-interactives Documentation',
+    (master_doc, 'generator-nbn-interactives', 'generator-nbn-interactives Documentation',
      [author], 1)
 ]
 
@@ -168,7 +168,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'generator-politico-interactives', 'generator-politico-interactives Documentation',
-     author, 'generator-politico-interactives', 'One line description of project.',
+    (master_doc, 'generator-nbn-interactives', 'generator-nbn-interactives Documentation',
+     author, 'generator-nbn-interactives', 'One line description of project.',
      'Miscellaneous'),
 ]

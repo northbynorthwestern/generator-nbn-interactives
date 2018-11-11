@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = python -msphinx
-SPHINXPROJ    = generator-politico-interactives
+SPHINXPROJ    = generator-nbn-interactives
 SOURCEDIR     = source
 BUILDDIR      = build
 

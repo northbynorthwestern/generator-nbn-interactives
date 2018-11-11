@@ -1,6 +1,4 @@
-.. image:: https://rawgithub.com/The-Politico/src/master/images/logo/badge.png
-
-generator-politico-interactives
+generator-nbn-interactives
 ===============================
 
 .. toctree::
