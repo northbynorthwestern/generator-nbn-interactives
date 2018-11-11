@@ -1,5 +1,5 @@
-nbn{
-  "name": "generator-politico-interactives",
+{
+  "name": "generator-nbn-interactives",
   "description": "Yeoman generator for interactive projects at North by Northwestern. Thank you POLITICO!",
   "version": "0.10.0",
   "main": "generators/app/index.js",
