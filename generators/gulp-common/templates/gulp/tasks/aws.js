@@ -14,9 +14,9 @@ const revAll = require('gulp-rev-all');
 const querystring = require('querystring');
 
 module.exports = () => {
-  const target = argv.production ? 
-    'interactives.politico.com' : 
-    'staging.interactives.politico.com';
+  const target = argv.production ?
+    'apps.northbynorthwestern.com' :
+    'staging.apps.northbynorthwestern.com';
 
   const region = 'us-east-1';
 
@@ -110,7 +110,7 @@ module.exports = () => {
 
         const q = querystring.stringify({ q: metaUrl });
         if (argv.production) {
-          open(`https://developers.facebook.com/tools/debug/sharing/?${q}`);        
+          open(`https://developers.facebook.com/tools/debug/sharing/?${q}`);
         }
         open(metaUrl);
       }, 1000);
