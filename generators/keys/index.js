@@ -1,4 +1,4 @@
-nbnconst Generator = require('yeoman-generator');
+const Generator = require('yeoman-generator');
 const fs = require('fs-extra');
 const os = require('os');
 const path = require('path');
