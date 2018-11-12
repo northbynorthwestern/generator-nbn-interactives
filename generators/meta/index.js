@@ -18,8 +18,8 @@ module.exports = class extends Generator {
 
     const timestamp = new Date();
     const publishPath = `interactives/${timestamp.getFullYear()}/${this.slug}/`;
-    const prodUrl = `https://www.politico.com/${publishPath}`;
-    const stagingUrl = `https://s3.amazonaws.com/staging.interactives.politico.com/${publishPath}index.html`;
+    const prodUrl = `https://apps.northbynortwestern.com/${publishPath}`;
+    const stagingUrl = ``;
 
     this.fs.copy(
       this.templatePath('gitignore'),
@@ -58,20 +58,20 @@ module.exports = class extends Generator {
       header: {
         headline: 'This is your headline in the metadata file',
         subhed: 'Subhed lives in the metadata.',
-        byline: 'Polly Politico in metadata',
-        byline_link: 'https://www.politico.com/',
+        byline: 'Firstname Lastname',
+        byline_link: 'https://www.northbynorthwestern.com/',
       },
       share: {
         fbook: {
           card_title: this.title,
-          card_description: 'The latest news from POLITICO.',
-          author: 'politico',
+          card_description: 'The latest news from North By Northwestern.',
+          author: 'northbynortwestern',
         },
         twitter: {
           card_title: this.title,
-          share_tweet: 'The latest news from POLITICO.',
-          card_description: 'The latest news from POLITICO.',
-          author: '@politico',
+          share_tweet: 'The latest news from North By Northwestern.',
+          card_description: 'The latest news from North By Northwestern.',
+          author: '@nbn_tweets',
         },
         image: {
           url: `${prodUrl}images/share.jpg`,
@@ -80,7 +80,7 @@ module.exports = class extends Generator {
           width: '600',
           height: '300',
         },
-        keywords: 'POLITICO, News, Washington D.C.',
+        keywords: 'North By Northwestern, News, Evanston',
       },
       telium: {
         free_paid_content: 'free',
@@ -88,7 +88,7 @@ module.exports = class extends Generator {
         ad_unit_section: 'whitehouse',
         content_author: 'Polly Politico|Peter Politico',
         content_byline: 'By Polly Politico and Peter Politico',
-        page_name: `${this.title} — POLITICO`,
+        page_name: `${this.title} — NBN`,
       },
     };
 

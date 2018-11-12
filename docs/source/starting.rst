@@ -15,7 +15,7 @@ From scratch
 
   ::
 
-    $ yo politico-interactives
+    $ yo nbn-interactives
 
 3. Once the generator finishes, you can simply run gulp to start the development server.
 
@@ -31,7 +31,7 @@ From GitHub
 
   ::
 
-    $ yo politico-interactives:passphrase
+    $ yo nbn-interactives:passphrase
 
 3. Install dependencies.
 
@@ -43,7 +43,7 @@ From GitHub
 
   ::
 
-    $ yo politico-interactives:archie
+    $ yo nbn-interactives:archie
 
 .. note::
 

@@ -13,7 +13,7 @@ Template context
 Data to go into the template context can come from three places: an ArchieML doc, a spreadsheet, and the meta JSON file. Each of those data sources are prefixed in the template context. So, to use an Archie key, you would write:
 
 .. code-block:: html+jinja
-  
+
   {{ ARCHIE.key }}
 
 Spreadsheet keys are prefixed with :code:`DATA`, and meta keys are prefixed with :code:`META`. For more, take a look at :code:`server/context.js`.
@@ -42,8 +42,8 @@ Adding a new page
 To add a new page to your interactive, use the :code:`new-page` subgenerator:
 
 ::
-  
-  $ yo politico-interactives:new-page
+
+  $ yo nbn-interactives:new-page
 
 This will ask you to give a name for your page. You can see your new page by going to :code:`localhost:3000/my-new-page/index.html`.
 
@@ -90,7 +90,7 @@ For image assets that should not be converted using our responsive image task, s
 Data assets
 -----------
 
-For data that needs to be used on the front-end (i.e. data for a D3 chart), you should place those files in :code:`dist/data` directly. 
+For data that needs to be used on the front-end (i.e. data for a D3 chart), you should place those files in :code:`dist/data` directly.
 
 If you need to use files in :code:`src/data`, such as data pulled in from :code:`gulp spreadsheet`, those files will be automatically copied to dist when :code:`gulp` is running. To copy files manually, run:
 
@@ -108,7 +108,7 @@ You will be asked if you want to use ArchieML when you start the generator. You 
 
 ::
 
-  $ yo politico-interactives:archie
+  $ yo nbn-interactives:archie
 
 
 You will need to provide the ID for the Google doc you wish to use, which you can get from the URL of your doc:
@@ -148,13 +148,13 @@ The archie gulp task will access your Google doc and overwrite :code:`src/data/a
 Spreadsheet
 -----------
 
-There is an optional gulp task for loading a Google Spreadsheet into JSON for use in your Nunjucks templates (or to load onto the page directly). 
+There is an optional gulp task for loading a Google Spreadsheet into JSON for use in your Nunjucks templates (or to load onto the page directly).
 
 To set it up, run:
 
 ::
-  
-  $ yo politico-interactives:spreadsheet
+
+  $ yo nbn-interactives:spreadsheet
 
 This will ask you for a spreadsheet ID. You can get that from the URL of your spreadsheet:
 
@@ -162,7 +162,7 @@ https://docs.google.com/spreadsheets/d/**yourGoogleIDhere**/edit
 
 The spreadsheet gulp task will overwrite :code:`src/data/data.json` with the data from the spreadsheet.
 
-The conversion from spreadsheet to JSON takes each sheet and converts it to JSON using `copytext <https://github.com/rdmurphy/node-copytext>`_'s table converter. This makes each row an object, using the first row as a header row for keys inside the JSON object. 
+The conversion from spreadsheet to JSON takes each sheet and converts it to JSON using `copytext <https://github.com/rdmurphy/node-copytext>`_'s table converter. This makes each row an object, using the first row as a header row for keys inside the JSON object.
 
 This is customizable at a sheet level in :code:`gulp/tasks/spreadsheet.js`. See the `copytext <https://github.com/rdmurphy/node-copytext>`_ docs for more information on how to customize the parsing.
 

@@ -32,9 +32,9 @@ Alternatively, you can clone a copy of the generator's git repository and use a 
 
 ::
 
-  $ git clone git@github.com:The-Politico/generator-politico-interactives.git
+  $ git clone git@github.com:northbynortwestern/generator-nbn-interactives.git
 
-  $ cd generator-politico-interactives
+  $ cd generator-nbn-interactives
 
   $ npm link
 
