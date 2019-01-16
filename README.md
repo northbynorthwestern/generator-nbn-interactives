@@ -1,4 +1,6 @@
 <img src="http://media.northbynorthwestern.com.s3.amazonaws.com/media/img/nbn_logo.svg" alt="drawing" width="100"/>
+
+
 # generator-nbn-interactives
 
 A [Yeoman](http://yeoman.io) generator to scaffold a development environment for building NBN interactive pieces. Borrowed from POLITICO.
