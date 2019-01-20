@@ -15,13 +15,14 @@ Make sure you have node and yarn installed (`brew install yarn --without-node`)
 Clone this repository onto your machine
 `git clone git@github.com:northbynorthwestern/generator-nbn-interactives.git`
 
-Inside that directory,
-`npm link`
+Go into the directory:
+`cd generator-nbn-interactives`
 
-Make sure you have the dependencies
-`npm install -g gulp-cli yo generator-nbn-interactives`
+Inside the directory,
+install the dependencies `npm install -g gulp-cli yo`
+and create a symbolic link to the directory `npm link`.
 
-Make a directory for your project and cd into the folder and run `yo nbn-interactives`
+Somewhere else, make a directory for your project and run `yo nbn-interactives` inside of it.
 
 ## Developing a project
 Once you have set up the template inside a directory, you can work on coding your project. You will do all of your work in the `src` directory (short for source).
