@@ -18,6 +18,9 @@ Clone this repository onto your machine
 Inside that directory,
 `npm link`
 
+Make sure you have the dependencies
+`npm install -g gulp-cli yo generator-nbn-interactives`
+
 Make a directory for your project and cd into the folder and run `yo nbn-interactives`
 
 ## Developing a project
