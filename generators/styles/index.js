@@ -32,6 +32,9 @@ module.exports = class extends Generator {
     this.fs.copy(
       this.templatePath('src/scss/_navigation.scss'),
       this.destinationPath('src/scss/_navigation.scss'));
+      this.fs.copy(
+        this.templatePath('src/scss/_project.scss'),
+        this.destinationPath('src/scss/_project.scss'));
 
     this.fs.copy(
       this.templatePath('src/scss/main.scss'),
