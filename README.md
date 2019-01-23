@@ -13,7 +13,7 @@ To use, you will download this template onto your computer and create a symbolic
 Make sure you have node and yarn installed (`brew install yarn --without-node`)
 
 Clone this repository onto your machine
-`git clone git@github.com:northbynorthwestern/generator-nbn-interactives.git`
+`git clone https://github.com/northbynorthwestern/generator-nbn-interactives.git`
 
 Go into the directory:
 `cd generator-nbn-interactives`
