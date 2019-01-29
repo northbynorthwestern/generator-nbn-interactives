@@ -10,19 +10,36 @@ See the docs on [readthedocs](http://generator-politico-interactives.readthedocs
 ## How to use
 To use, you will download this template onto your computer and create a symbolic link.
 
-Make sure you have node and yarn installed (`brew install yarn --without-node`)
+First, make sure you're using Node version 10.15.0.
 
-Clone this repository onto your machine
+```nvm install 10.15.0 ```
+
+```nvm use 10.15.0```
+
+Restart your terminal session and check that it's using the right version:
+
+```node -v```
+
+Make sure you have node and yarn installed:
+
+```brew install yarn --without-node```
+
+Clone this repository onto your machine:
+
 `git clone https://github.com/northbynorthwestern/generator-nbn-interactives.git`
 
-Go into the directory:
-`cd generator-nbn-interactives`
+Go into the directory where you just cloned this repository:
+
+```cd generator-nbn-interactives```
 
 Inside the directory,
-install the dependencies `npm install -g gulp-cli yo`
-and create a symbolic link to the directory `npm link`.
+install the dependencies and create a symbolic link to the directory:
 
-Somewhere else, make a directory for your project and run `yo nbn-interactives` inside of it.
+ ```npm install -g gulp-cli yo```
+
+ ```npm link```
+
+Somewhere else, make a directory for your project and run ```yo nbn-interactives``` inside of it.
 
 ## Developing a project
 Once you have set up the template inside a directory, you can work on coding your project. You will do all of your work in the `src` directory (short for source).
